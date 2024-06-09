@@ -3,7 +3,12 @@
   <strong class="FirstWord">{{ productName }}</strong>
 </div>
 <div>
-  {{ authors }}
+  @for (author of authors; track author) {
+    <span>{{ author }}</span>
+    @if (!$last) {
+      <span>、</span>
+      }
+  }
 </div>
 <div class="company">
 <span>{{ company }}</span>
