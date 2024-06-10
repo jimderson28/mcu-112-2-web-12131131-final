@@ -16,5 +16,6 @@ export class ProductCardComponent {
   @Input({ transform: numberAttribute }) price!: number;
   @HostBinding('class')
   class='product-card';
+  @Output() cars = new EventEmitter<void>();
   @Output() view = new EventEmitter<void>();
 }

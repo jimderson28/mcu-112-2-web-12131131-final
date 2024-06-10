@@ -14,6 +14,9 @@ export class ProductCardListComponent {
  products!: Product[];
 
  @Output()
+  cars = new EventEmitter<Product>();
+
+ @Output()
  view = new EventEmitter<Product>();
 }
 

@@ -44,7 +44,11 @@ export class ProductPageComponent {
 ];
 
 router = inject(Router);
+
+onCars(product:Product): void{
+  this.router.navigate(['product','car']);
+}
 onView(product:Product): void{
-this.router.navigate(['product']);
+this.router.navigate(['product','view']);
 }
 }
